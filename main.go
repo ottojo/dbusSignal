@@ -39,7 +39,7 @@ func main() {
 func concatStrings(strings ...string) string {
 	r := ""
 	for _, s := range strings {
-		r += s
+		r += s +" "
 	}
-	return r
+	return r[:len(r)-1]
 }
